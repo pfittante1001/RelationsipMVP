@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="21f2f33b17e941988a6f8d4f5643294e" Name="Diagram1">
+        <EntityTypeShape EntityType="MotoristModel.Address" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotoristModel.Driver" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotoristModel.Number" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotoristModel.sysdiagram" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotoristModel.Ttile" Width="1.5" PointX="6" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MotoristModel.Yehicle" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="MotoristModel.FK_Drivers_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="MotoristModel.FK_Numbers_Drivers" ManuallyRouted="false" />
+        <AssociationConnector Association="MotoristModel.FK_Ttiles_Drivers" ManuallyRouted="false" />
+        <AssociationConnector Association="MotoristModel.FK_Ttiles_Yehicles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,42 @@
+﻿@model RelationshipMVC.Ttile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ttile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTitled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTitled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Driver.DriverName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Driver.DriverName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Yehicle.Make)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Yehicle.Make)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TitleID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

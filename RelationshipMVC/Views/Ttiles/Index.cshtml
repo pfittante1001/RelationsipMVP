@@ -1,0 +1,45 @@
+﻿@model IEnumerable<RelationshipMVC.Ttile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DateTitled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Driver.DriverName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Yehicle.Make)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateTitled)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Driver.DriverName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Yehicle.Make)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TitleID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TitleID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TitleID })
+        </td>
+    </tr>
+}
+
+</table>
